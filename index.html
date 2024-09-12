@@ -114,40 +114,50 @@
                 <input type="submit" value="Send Message" class="btn">
             </form>
         </section>
-    
+
         <footer class="footer">
             <div class="footer-text">
                 <p>Copyright &copy; 2024 by @SKULE Tutoring | All Rights Reserved.</p>
             </div>
-    
+
             <div class="footer-iconTop">
                 <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
             </div>
         </footer>
-    
-        <!-- JSType & EmailJS SDK -->
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="main.js"></script>
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script>
 
+        <!--EmailJS SDK -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script>
             (function(){
                 emailjs.init("uz8JupWR6HxY3PnOf"); //Public Key
             })();
 
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
-    
+
                 emailjs.sendForm('service_qdfvefo', 'template_fvyrstw', this)
                     .then(function() {
                         alert('Message Sent Successfully!');
                     }, function(error) {
                         alert('Failed to send message: ' + JSON.stringify(error));
                     });
-    
+
                 this.reset();
             });
         </script>
-    </body>
-    </html>
+        </body>
+        </html>
+
+        </footer>
+
+        <!--  TYPED JS  -->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+        <!--  SCROLL REVEAL  -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--  MAIN JS  -->
+        <script src="main.js"></script>
+        </body>
+        </html>
