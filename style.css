@@ -176,7 +176,9 @@ span {
     font-size: 4.5rem;
 }
 
-.about-content h2 {
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+ .about-content h2 {
     text-align: left;
     line-height: 1.2;
 }
@@ -188,7 +190,10 @@ span {
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
-}
+} 
+
+
+/* ------------------------------------------------------------------------------------------------------------------ */
 
 .services h2 {
     margin-bottom: 5rem;
@@ -385,8 +390,39 @@ span {
     color: var(--snd-bg-color);
 }
 
+.contact-bottom {
+    text-align: center;
+    padding: 10px; /* Further reduced padding */
+}
 
+.sub-title {
+    font-size: 4rem; /* Font size for the title */
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 5px; /* Further reduced margin below the title */
+}
+
+.sub-title span {
+    color: #4AB3F4; /* Light blue color */
+}
+
+.contact-bottom p {
+    color: white;
+    font-size: 2rem; /* Font size for contact details */
+    margin: 3px 0; /* Minimal margin between contact items */
+}
+
+.contact-bottom i {
+    margin-right: 8px; /* Adjusted margin for icons */
+    color: #4AB3F4; /* Light blue color for icons */
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /*BREAKPOINT*/
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* MATH CSS PAGE */
 
 @media (max-width: 1200px) {
     html {
